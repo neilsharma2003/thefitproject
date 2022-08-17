@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>The Fit Project</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    </link>
+</head>
+
+<body id="page-top">
+    <% if(user) { %>
+        <%- include('./partials/navin') %>
+            <% } else { %>
+                <%- include('./partials/navout') %>
+                    <% } %>
+                        <header class="masthead">
+                            <div class="container px-5">
+                                <div class="row gx-5 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                                            <h1 class="display-1 lh-1 mb-3" style="font-size: 400%;">Plan your fitness
+                                                goals
+                                                and
+                                                acheive
+                                                them
+                                                faster.</h1>
+                                            <p class="lead fw-normal text-muted mb-5">The Fit Project gives you the
+                                                tools to track, edit and add workout routines, meal plans and everything
+                                                you need to stay consistent in your fitness journey. </p>
+                                            <a href="/dashboard" class="btn mr-md-2 mb-md-0 mb-2 btn-primary btn-lg"
+                                                role="button">Go to Dashboard</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <div>
+                                                <img width="450" src="giphy.gif" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <aside class="text-center bg-gradient-primary-to-secondary">
+                            <div class="container px-5">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-xl-8">
+                                        <div class="h2 fs-1 text-white mb-4">An intuitive solution to a common problem
+                                            that
+                                            we
+                                            all
+                                            face,
+                                            wrapped up in a single app!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <footer class="bg-black text-center py-5">
+                            <div class="container px-5">
+                                <div class="text-white-50 small">
+                                    <div class="mb-2">&copy; The Fit Project 2022. All Rights Reserved.</div>
+                                </div>
+                            </div>
+                        </footer>
+                        <script
+                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                        <!-- Core theme JS-->
+                        <script>
+                            window.addEventListener('DOMContentLoaded', event => {
+
+                                // Activate Bootstrap scrollspy on the main nav element
+                                const mainNav = document.body.querySelector('#mainNav');
+                                if (mainNav) {
+                                    new bootstrap.ScrollSpy(document.body, {
+                                        target: '#mainNav',
+                                        offset: 74,
+                                    });
+                                };
+
+                                // Collapse responsive navbar when toggler is visible
+                                const navbarToggler = document.body.querySelector('.navbar-toggler');
+                                const responsiveNavItems = [].slice.call(
+                                    document.querySelectorAll('#navbarResponsive .nav-link')
+                                );
+                                responsiveNavItems.map(function (responsiveNavItem) {
+                                    responsiveNavItem.addEventListener('click', () => {
+                                        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                                            navbarToggler.click();
+                                        }
+                                    });
+                                });
+
+                            });
+                        </script>
+</body>
+
+</html>
