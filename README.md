@@ -7,8 +7,12 @@
 
 > Create, edit, delete and browse a large catalogue of workout routines and exercises. The Fit Project provides all the tools you need to plan and stick to your fitness endeavors. 
 
+CRUD operations are performed on a MongoDB database with secure user authorization/authentication. 
+
 ### [Demo the application!](https://thefitproject.herokuapp.com)
 Feel free to use username: test and password: 123 to test the application.
+
+You must setup config vars in the .env file. This includes an ACCESS_TOKEN_SECRET for Bcrypt and DBURI for the MongoDB connection. Use a free MongoDB Atlas shared cluster to get started. 
 
 ## Install
 
