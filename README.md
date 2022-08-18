@@ -10,7 +10,7 @@
 CRUD operations are performed on a MongoDB database with secure user authorization/authentication. 
 
 ### [Demo the application!](https://thefitproject.herokuapp.com)
-Feel free to use username: test and password: 123 to test the application.
+Feel free to use username: <b>test</b> and password: <b>123</b> to test the application.
 
 You must setup config vars in the .env file. This includes an ACCESS_TOKEN_SECRET for Bcrypt and DBURI for the MongoDB connection. Use a free MongoDB Atlas shared cluster to get started. 
 
