@@ -1,0 +1,21 @@
+const crudRouter = require('express')
+const crudController = require('../controllers/crudController')
+const { requireAuth, checkUser } = require('../authmiddleware')
+const crud_router = crudRouter()
+
+crud_router.get('/newuser', requireAuth, crudController.newuser_get)
+crud_router.post('/newuser', requireAuth, crudController.newuser_post)
+crud_router.get('/dashboard', requireAuth, crudController.dashboard_get)
+crud_router.get('/personalinfo', requireAuth, crudController.personalinfo_get)
+crud_router.post('/passwordreset', requireAuth, crudController.passwordreset_post)
+crud_router.get('/newworkout', requireAuth, crudController.newworkout_get)
+crud_router.put('/newworkout', requireAuth, crudController.newworkout_put)
+crud_router.post('/newworkout', requireAuth, crudController.newworkout_post)
+crud_router.get('/addexercise/:id', requireAuth, crudController.addexercise_get)
+crud_router.put('/addexercise/:id', requireAuth, crudController.addexercise_put)
+crud_router.get('/workout/:id', requireAuth, crudController.workout_get)
+crud_router.delete('/workout/:id', requireAuth, crudController.workout_delete)
+crud_router.get('/editworkout/:id', requireAuth, crudController.editworkout_get)
+crud_router.put('/editworkout/:id', requireAuth, crudController.editworkout_put)
+
+module.exports = crud_router
