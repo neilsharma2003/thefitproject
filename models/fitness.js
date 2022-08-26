@@ -24,5 +24,7 @@ const exercises_db = [] // redacted exercise catalogue parsed from DB
 
 const cardio = []
 const hyptertrophy = []
+const powerlifting = []
+const calisthenics = []
 
 module.exports = { userInfo, routines, exercises_db, cardio, hypertrophy, powerlifting, calisthenics }
