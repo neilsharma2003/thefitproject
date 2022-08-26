@@ -19,7 +19,7 @@ npm install
 ## Usage
 
 ```sh
-npm run start
+node app.js
 ```
 
 ## Run tests
@@ -34,9 +34,3 @@ npm run test
 
 * Github: [@neilsharma2003](https://github.com/neilsharma2003)
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
