@@ -8,7 +8,7 @@
 
 > Create, edit, delete and browse a large catalogue of workout routines and exercises. The Fit Project provides all the tools you need to plan and stick to your fitness endeavors. 
 
-### ✨ [Demo](https://thefitproject.herokuapp.com)
+### [Demo](https://the-fit-project.onrender.com/)
 
 ## Install
 
